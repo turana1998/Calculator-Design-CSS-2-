@@ -1,0 +1,179 @@
+body
+{
+    background-color: #6fd3cb;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+}
+#all
+{
+    height: 800px;
+    width: 600px;
+    background-color: #ffb717;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+ }
+ #img2
+ {
+     position: absolute;
+     height: 200px;
+     width: 200px;
+     left: 200px;
+     top: 70%;
+     z-index: 5;
+     animation-name: img2;
+     animation-duration: 20s;
+     transform:rotate(180deg);
+     animation-fill-mode:forwards;
+ }
+  #img1
+{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    right: 200px;
+    top: 10%;
+    z-index: 4;
+    animation-name: img1;
+    animation-duration: 20s;
+    transform:rotate(180deg);
+    animation-fill-mode: forwards;
+}
+#img3
+{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    right: 200px;
+    top: 40%;
+    z-index: 6;
+    animation-name: img3;
+    animation-duration: 20s;
+    transform:rotate(180deg);
+    animation-fill-mode: forwards;
+}
+#img4
+{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 200px;
+    top: 40%;
+    z-index: 7;
+    animation-name: img4;
+    animation-duration: 20s;
+    transform:rotate(180deg);
+    animation-fill-mode: forwards;
+}
+@keyframes img4
+{
+    from
+    {
+        left: 400px;
+    }
+    to
+    {
+        left: 50px;
+    }
+}
+@keyframes img3
+{
+    from
+    {
+        right: 400px;
+    }
+    to
+    {
+        right: 50px;
+    }
+}
+@keyframes img2 
+{
+    from
+    {
+        top: 70%;
+    }
+    to
+    {
+        top: 10%;
+    }
+}
+@keyframes img1
+{
+    from
+    {
+        top: 10%;
+    }
+    to
+    {
+        top: 70%;
+    }
+}
+#first input
+{
+    background-color: #866339;
+    height: 120px;
+    width: 500px;
+    border: none;
+
+   
+}
+#first_column input
+{
+    border-radius: 35px;
+    color: #feee15;
+    font-size:65px;
+    text-align: end;
+    margin-top: 20px;
+    padding-top: 30px;
+    font-weight: bold;
+    cursor:-webkit-grab;
+}
+#first_column input::placeholder
+{
+    color: #feee15;
+    font-size:65px;
+    text-align: end;
+    margin-top: 20px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+#table  tr
+{
+   margin-top: 20px;
+
+  
+}
+#table td  input
+{ 
+    border: none;
+    background-color: #ffed1d;
+    margin-left: 20px;
+    border-radius: 25px;
+    text-align: center;
+    font-size:65px;
+    height: 110px;
+    width: 100px;
+    color: #ddaa69;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#table #orange input
+{
+    border-radius: 25px;
+    background-color: #ff7900;
+    text-align: center;
+    margin-top: 30px;
+    font-size:65px;
+    height: 110px;
+    width: 100px;
+    color: #ffed1d;
+    font-weight: bold;
+    cursor: pointer;
+}

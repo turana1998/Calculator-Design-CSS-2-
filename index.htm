@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="animate.css">
+    <title>Calculator</title>
+</head>
+
+<body> 
+    <img id="img1" src="img/1.png" alt="1"/>
+    <img id="img2" src="img/2.png" alt="2"/>
+    <img id="img3" src="img/3.png" alt="3"/>
+    <img id="img4" src="img/4.png" alt="4"/>
+    <div id="all">
+        <form name="Calculator">
+           
+            <table id="table">
+                <tr id="first">
+                    <th id="first_column" colspan="4">
+                        <input type="text" placeholder="0"name="cavab">
+                    </th>
+                </tr>
+                <tr>
+                    <td id="7"><input type="button" class="animated jackInTheBox"  value="7" onclick="Func(7)"></td>
+                    <td id="8"><input type="button" class="animated jackInTheBox" value="8" onclick="Func(8)"></td>
+                    <td id="9"><input type="button" class="animated jackInTheBox" value="9" onclick="Func(9)"></td>
+                    <td id="orange" id="%">
+                        <input type="button" class="animated jackInTheBox" value="%" onclick="Func('%')">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="4"><input  type="button" class="animated jackInTheBox"" value="4" name="inputt" onclick="Func(4)" onclick="color()"></td>
+                    <td id="5"><input type="button" class="animated jackInTheBox" value="5" onclick="Func(5)"></td>
+                    <td id="6"><input type="button" class="animated jackInTheBox" value="6" onclick="Func(6)"></td>
+                    <td id="orange" id="x">
+                        <input type="button" value="x" class="animated jackInTheBox" onclick="Func('*')">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="1"><input type="button" value="1" class="animated jackInTheBox" onclick="Func(1)"></td>
+                    <td id="2"><input type="button" value="2" class="animated jackInTheBox" onclick="Func(2)"></td>
+                    <td id="3"><input type="button" value="3" class="animated jackInTheBox" onclick="Func(3)"></td>
+                    <td id="orange" id="-" >
+                        <input type="button" value="-"class="animated jackInTheBox" onclick="Func('-')">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="0"><input type="button" value="0" class="animated jackInTheBox" onclick="Func(0)"></td>
+                    <td id=".">
+                        <input type="button" value=" " class="animated jackInTheBox" onclick="Clear()"></td>
+                    </td>
+                    <td id="orange" id="+">
+                        <input type="button" value="+" class="animated jackInTheBox" onclick="Func('+')"></td>
+                    </td>
+                    <td id="orange" id="=">
+                        <input type="button" value="=" class="animated jackInTheBox" onclick="Sum()"></td>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+       /* function color()
+        {
+            Calculator.inputt.a="animated jackInTheBox";
+        }
+        */
+        function Func(deyisen) {
+            Calculator.cavab.value += deyisen;
+            if(deyisen='%')
+            {
+                deyisen[1]=a;
+                deyisen[2]=b;
+                Calculator.cavab.value=(a-(a/b)*b);
+            }
+        }
+        function Sum() {
+            Calculator.cavab.value = eval(Calculator.cavab.value);
+        }
+        function Clear ()
+        {
+            Calculator.cavab.value="";
+            //Calculator.cavab.placeholder.value="0"
+        }
+    </script>
+</body>
+
+</html>
